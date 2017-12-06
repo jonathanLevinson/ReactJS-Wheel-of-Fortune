@@ -1,0 +1,100 @@
+body{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: lightgray;
+    height: 100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+/*--------------------*/
+.app{
+    border: solid black 4px;
+    background:mintcream;
+    width: 80vw;
+    height: 400px;     
+}
+header {
+    width: 100%;
+    text-align: center;
+}
+.word {
+    padding-top: 20px;
+    width: 70%; 
+    display: flex;
+    justify-content: center;
+    margin: auto;   
+}
+.square {
+    border: solid black 2px;
+    margin-left: 10px;
+    /*margin-bottom: 10px;*/
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+}
+/*-------------- message ----*/
+.msgContainer{
+    margin: auto;
+    height: 15%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.msg {      
+    font-size: 30px; 
+    padding: 10px;   
+    color: white;
+}
+.won {
+    background:mediumaquamarine;
+}
+.lost {
+    background: #d13247;
+}
+/* ----------- letters -------*/
+.letters {
+    width: 80%; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.letter {
+    margin-bottom: 10px;
+}
+.letter:hover{
+    background: yellow;
+}
+.letter:active {
+    background: black;
+    color: white;
+}
+/*--------------- counter -------*/
+.counterContainer {
+	position:absolute;
+    z-index: 100;	
+}
+.counter {
+    position: relative;
+    z-index: 999;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.counter p{
+    font-size: 20px;
+}
+.counter span {
+    font-size: 45px;
+    color: #d13247;
+}
